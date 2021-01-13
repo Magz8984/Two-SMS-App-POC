@@ -20,9 +20,6 @@ interface User {
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
-  }
 
   getWelcomMessage() :string {
     const twiml = new MessagingResponse();
