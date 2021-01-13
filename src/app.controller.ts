@@ -13,7 +13,7 @@ export class AppController {
   @Post()
   postSMS(@Body() body: any) {    
     if(body.Body.startsWith("ID")) {
-      const id = body.Body.replace(/[^0-9]/g, "")
+      const id = body.Body.replace(/[^0-9]/g, "");
       return this.appService.getIPRSInformation(id);
     }
     return this.appService.getWelcomMessage();
