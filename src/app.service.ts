@@ -47,7 +47,7 @@ export class AppService {
 
   getUsers() {
     return new Promise((res, rej) => {
-      // Fetch users from the ./users.json object
+      // Fetch users from the ./users.json file
       fs.readFile('src/users.json', 'utf8', (err: any, jsonString: string) => {
         if (err) {
             rej(err)
