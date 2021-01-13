@@ -31,16 +31,13 @@ export class AppService {
     const twiml = new MessagingResponse();
     // TODO Fetch user data from IPRS system and register user.
   
-    const users = <Array<User>> await this.getUsers();
+    const users = (<Array<User>> await this.getUsers()).filter(user => user.id === id);
 
-    const user = users.filter(user => user.id === id);
-
-    if(!user.length) {
+    if(!users.length) {
       twiml.message(`Kindly check your id for errors`);
       return twiml.toString();
     }
-
-    twiml.message(`Hey ${user[0].First_Name} ${user[0].Surname}. You have been registered successfully.`);
+    twiml.message(`Hey ${users[0].First_Name} ${users[0].Surname}. You have been registered successfully.`);
     return twiml.toString();
   }
   
