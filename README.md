@@ -18,7 +18,7 @@ Collins Magondu Muthinja
 - Install nest js cli
 - Run npm install
 - Run npm run start
-- Use ngrok to set up tunnel for app 
+- Use ngrok to set up tunnel for app
 ```ngrok http 3000```
 
 **NB: Twilio number is in trial account**
