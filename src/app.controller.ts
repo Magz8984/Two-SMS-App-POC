@@ -6,10 +6,10 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Post()
-  postSMS(@Body() body: any) {    
+  async postSMS(@Body() body: any) {    
     if(body.Body.startsWith("ID")) {
       const id = body.Body.replace(/[^0-9]/g, "");
-      return this.appService.getIPRSInformation(id);
+      return await this.appService.getIPRSInformation(id);
     }
     return this.appService.getWelcomMessage();
   }
