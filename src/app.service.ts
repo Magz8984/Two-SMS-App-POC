@@ -29,7 +29,7 @@ export class AppService {
 
   async getIPRSInformation(id: string) {
     const twiml = new MessagingResponse();
-    // TODO Fetch user data from IPRS system.
+    // TODO Fetch user data from IPRS system
     const users = (<Array<User>> await this.getUsers()).filter(user => user.id === id);
     
     if(!users.length) {
