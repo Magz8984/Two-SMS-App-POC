@@ -1,0 +1,35 @@
+[
+    {
+        "id": "35123544",
+        "Surname": "Simion",
+        "First_Name": "John",
+        "Other_Name": "Doe",
+        "photo": "SampleImageURL",
+        "dob": "1979/07/05",
+        "gender": "Male",
+        "Place_of_Birth": "Kasarani",
+        "Serial_Number": "1234"
+    },
+    {
+        "id": "11123544",
+        "Surname": "Olloo",
+        "First_Name": "Mark",
+        "Other_Name": "Ongango",
+        "photo": "SampleImageURL",
+        "dob": "1972/07/05",
+        "gender": "Male",
+        "Place_of_Birth": "Ugenya",
+        "Serial_Number": "1234"
+    },
+    {
+        "id": "1112544",
+        "Surname": "Atieno",
+        "First_Name": "Mary",
+        "Other_Name": "Angango",
+        "photo": "SampleImageURL",
+        "dob": "1972/07/05",
+        "gender": "Female",
+        "Place_of_Birth": "Ugenya",
+        "Serial_Number": "1234"
+    }
+]
